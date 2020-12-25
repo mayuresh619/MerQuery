@@ -88,6 +88,60 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\img\editor-1.jpg" />
+    <Content Include="Content\img\faqs.jpg" />
+    <Content Include="Content\img\hero.png" />
+    <Content Include="Content\img\icon-service-1.png" />
+    <Content Include="Content\img\icon-service-2.png" />
+    <Content Include="Content\img\icon-service-3.png" />
+    <Content Include="Content\img\icon-service-4.png" />
+    <Content Include="Content\img\icon-service-5.png" />
+    <Content Include="Content\img\icon-service-6.png" />
+    <Content Include="Content\img\icon-service-7.png" />
+    <Content Include="Content\img\icon-service-8.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\news.jpg" />
+    <Content Include="Content\img\play-60.png" />
+    <Content Include="Content\img\play-hover-60.png" />
+    <Content Include="Content\img\play-hover.png" />
+    <Content Include="Content\img\play.png" />
+    <Content Include="Content\img\portfolio-1.jpg" />
+    <Content Include="Content\img\portfolio-2.jpg" />
+    <Content Include="Content\img\portfolio-3.jpg" />
+    <Content Include="Content\img\portfolio-4.jpg" />
+    <Content Include="Content\img\poster.jpg" />
+    <Content Include="Content\img\quote.png" />
+    <Content Include="Content\img\service-1.png" />
+    <Content Include="Content\img\service-2.png" />
+    <Content Include="Content\img\service-3.png" />
+    <Content Include="Content\img\service-4.png" />
+    <Content Include="Content\img\team-1.jpg" />
+    <Content Include="Content\img\team-2.jpg" />
+    <Content Include="Content\img\team-3.jpg" />
+    <Content Include="Content\img\team-4.jpg" />
+    <Content Include="Content\img\testimonial-1.jpg" />
+    <Content Include="Content\img\testimonial-2.jpg" />
+    <Content Include="Content\img\testimonial-3.jpg" />
+    <Content Include="Content\img\testimonial-4.jpg" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\lib\isotope\isotope.pkgd.js" />
+    <Content Include="Content\lib\isotope\isotope.pkgd.min.js" />
+    <Content Include="Content\lib\lightbox\css\lightbox.css" />
+    <Content Include="Content\lib\lightbox\css\lightbox.min.css" />
+    <Content Include="Content\lib\lightbox\images\close.png" />
+    <Content Include="Content\lib\lightbox\images\loading.gif" />
+    <Content Include="Content\lib\lightbox\images\next.png" />
+    <Content Include="Content\lib\lightbox\images\prev.png" />
+    <Content Include="Content\lib\lightbox\js\lightbox.js" />
+    <Content Include="Content\lib\lightbox\js\lightbox.min.js" />
+    <Content Include="Content\lib\lightbox\links.php" />
+    <Content Include="Content\lib\slick\ajax-loader.gif" />
+    <Content Include="Content\lib\slick\fonts\slick.svg" />
+    <Content Include="Content\lib\slick\slick-theme.css" />
+    <Content Include="Content\lib\slick\slick.css" />
+    <Content Include="Content\lib\slick\slick.js" />
+    <Content Include="Content\lib\slick\slick.min.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -102,6 +156,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Content\lib\slick\config.rb" />
+    <Content Include="Content\lib\slick\fonts\slick.eot" />
+    <Content Include="Content\lib\slick\fonts\slick.ttf" />
+    <Content Include="Content\lib\slick\fonts\slick.woff" />
+    <Content Include="Content\lib\slick\slick-theme.less" />
+    <Content Include="Content\lib\slick\slick-theme.scss" />
+    <Content Include="Content\lib\slick\slick.less" />
+    <Content Include="Content\lib\slick\slick.scss" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
