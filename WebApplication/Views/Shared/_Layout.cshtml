@@ -24,7 +24,7 @@
     <link href="~/Content/css/style.css" rel="stylesheet">
 
 </head>
-<body>
+<body ng-app="MyApp">
     <div class="wrapper">
         <!-- Header Start -->
         <div class="header">
@@ -64,10 +64,10 @@
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav ml-auto">
                                     <a href="~/Home/Index" class="nav-item nav-link active">Home</a>
-                                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                                    <a href="services.html" class="nav-item nav-link">Services</a>
-                                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-                                    <a href="single.html" class="nav-item nav-link">Single Page</a>
+                                    <a href="~/Home/AboutUs" class="nav-item nav-link">About Us</a>
+                                    <a href="~/Home/Services" class="nav-item nav-link">Services</a>
+                                    <a href="~/Home/Portfolio" class="nav-item nav-link">Portfolio</a>
+                                    @*<a href="single.html" class="nav-item nav-link">Single Page</a>*@
                                     <a href="~/Home/Contact" class="nav-item nav-link">Contact Us</a>
                                 </div>
                             </div>
@@ -137,6 +137,7 @@
     </div>
                <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="~/Scripts/angular.min.js"
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="~/Content/lib/slick/slick.min.js"></script>
         <script src="~/Content/lib/isotope/isotope.pkgd.min.js"></script>
@@ -144,5 +145,6 @@
 
         <!-- Template Javascript -->
         <script src="~/Content/js/main.js"></script>
+        <script src="~/Scripts/Common.js"></script>
 </body>
 </html>

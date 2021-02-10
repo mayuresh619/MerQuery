@@ -1,0 +1,185 @@
+﻿
+@{
+    ViewBag.Title = "Portfolio";
+}
+
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">Portfolio</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Portfolio Start -->
+<div class="portfolio" ng-controller="PortCtrl" ng-init="Getportfolio()">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Portfolio</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium ornare velit non</p>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".web-des">Design</li>
+                    <li data-filter=".web-dev">Development</li>
+                    <li data-filter=".dig-mar">Digital Marketing</li>
+                </ul>
+            </div>
+        </div>
+        <div id="portfoliodiv" class="row portfolio-container">
+            @*<div ng-repeat="x in portfoliodata">
+                <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item {{x.PortfolioType}}">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{x.ImagePath}}" alt="{{x.ImageName}}">
+                            <a href="{{x.ImagePath}}" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a href="{{x.PortfolioLink}}" class="link-details" target="_blank"><i class="fa fa-link"></i></a>
+                            <a class="portfolio-title" href="{{x.PortfolioLink}}" target="_blank">{{x.PortfolioName}}</a>
+                        </figure>
+                    </div>
+                </div>
+            </div>*@
+
+            @*<div id="portfoliodiv">
+
+            </div>*@
+
+            @*<div class="col-lg-3 col-md-6 col-sm-6 portfolio-item web-des">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/MayureshResume.png" alt="Portfolio Image">
+                        <a href="~/Content/img/MayureshResume.png" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="https://mayuresh619.github.io/myportfolio/" class="link-details" target="_blank"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="https://mayuresh619.github.io/myportfolio/" target="_blank">Mayuresh Resume</a>
+                    </figure>
+                </div>
+            </div>*@
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item web-dev">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-2.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link" target="_blank"></i></a>
+                        <a class="portfolio-title" href="#">Test Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item dig-mar">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-3.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item web-des">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-4.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-4.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item web-des">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-1.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-1.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item web-dev">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-2.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item dig-mar">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-3.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item web-des">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-4.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-4.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item web-des">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-1.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-1.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item web-dev">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-2.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item dig-mar">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-3.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item web-des">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="~/Content/img/portfolio-4.jpg" alt="Portfolio Image">
+                        <a href="~/Content/img/portfolio-4.jpg" class="link-preview" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="link-details"><i class="fa fa-link"></i></a>
+                        <a class="portfolio-title" href="#">Project Name Here</a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 load-more">
+                <a class="btn" href="#">Load More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Start -->
